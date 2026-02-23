@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mobile Expression – Join the Mobile Research Community</title>
+<meta name="description" content="Join Mobile Expression, a mobile research community where your opinions help improve mobile experiences. Mobile-first, simple, and easy to join."/>
+<style>
+:root {
+    --primary: #8AB225; /* green accent */
+    --text: #222222; /* dark grey/black for text */
+    --muted: #666666; /* muted grey for secondary text */
+    --bg: #F7F9FB; /* light grey background */
+    --card: #FFFFFF; /* card backgrounds */
+    --border: #E2E8F0; /* borders */
+    --shadow: 0 4px 12px rgba(0,0,0,0.05);
+    --radius: 18px;
+}
+* { box-sizing: border-box; }
+body {
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height:1.5;
+}
+a { color: var(--primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.topbar {
+    background: var(--text);
+    color: #ffffff;
+    padding: 12px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.topbar-inner {
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-weight: 800;
+}
+.logo {
+    width:34px;
+    height:34px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.2);
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+}
+.pill {
+    background: rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.25);
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.wrap {
+    max-width: 980px;
+    margin:0 auto;
+    padding: 18px 14px 28px;
+}
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap:20px;
+    align-items: stretch;
+}
+@media (max-width: 860px) {
+    .hero { grid-template-columns: 1fr; }
+}
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 18px;
+}
+.badge {
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:7px 12px;
+    border-radius:999px;
+    background: #F0F4EC;
+    color: var(--primary);
+    font-weight:700;
+    font-size:13px;
+    width: fit-content;
+    border:1px solid var(--primary);
+}
+h1 {
+    margin: 0;
+    font-size: clamp(26px,4.2vw,44px);
+    line-height:1.1;
+}
+.sub {
+    margin: 8px 0;
+    color: var(--muted);
+    max-width: 55ch;
+}
+.bullets {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+.bullet {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+.check {
+    width:22px;
+    height:22px;
+    border-radius:6px;
+    background: rgba(138,178,37,0.2);
+    border: 1px solid rgba(138,178,37,0.4);
+    display: grid;
+    place-items: center;
+    flex:0 0 auto;
+    font-weight: 900;
+}
+.bullet b { display:block; }
+.bullet p { margin:0; color: var(--muted); font-size:14px; }
+
+.cta-row {
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:16px;
+}
+.btn {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 18px;
+    border-radius:14px;
+    font-weight:900;
+    min-height:48px;
+    transition: all 0.12s ease;
+    border:1px solid transparent;
+    cursor:pointer;
+}
+.btn-primary {
+    background: var(--primary);
+    color:#ffffff;
+    border-color: var(--primary);
+}
+.btn-primary:hover {
+    filter: brightness(1.05);
+}
+.btn-secondary {
+    background: var(--card);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+.btn-secondary:hover {
+    background: rgba(138,178,37,0.05);
+}
+.note {
+    margin-top:8px;
+    color: var(--muted);
+    font-size:12px;
+}
+
+.info h2 { margin-top:0; font-size:20px; }
+.info p { margin-bottom:12px; color: var(--muted); }
+
+.footer {
+    margin-top: 20px;
+    padding: 18px;
+    font-size:12px;
+    color: var(--muted);
+    text-align:center;
+}
+.footer-links {
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    margin-top:8px;
+}
+.footer-links a { color: var(--primary); }
+
+@media (max-width:860px) {
+    .btn { width:100%; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="logo">ME</div>
+      <span>Mobile Expression</span>
+    </div>
+    <div class="pill">USA • iOS</div>
+  </div>
+</div>
+<main class="wrap">
+  <section class="hero">
+    <div class="card hero-left">
+      <div class="badge"><span class="dot"></span> Mobile research community</div>
+      <h1>Share your opinions.<br/>Help improve mobile experiences.</h1>
+      <p class="sub">
+        Join Mobile Expression — a community where your feedback helps shape better mobile services and products.
+        Sign‑up is quick and works best on iPhone.
+      </p>
+      <div class="bullets">
+        <div class="bullet">
+          <div class="check">✓</div>
+          <div><b>Mobile‑first & easy to use</b><p>Designed for phone users with a simple step‑by‑step flow.</p></div>
+        </div>
+        <div class="bullet">
+          <div class="check">✓</div>
+          <div><b>Your voice matters</b><p>Share opinions to help improve the mobile internet experience.</p></div>
+        </div>
+        <div class="bullet">
+          <div class="check">✓</div>
+          <div><b>Quick eligibility check</b><p>See if you qualify in a few taps before completing your sign‑up.</p></div>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://afflat3c1.com/trk/lnk/8E8916AE-56F7-44CF-89FB-554FA0AA2E90/?o=17951&c=918277&a=580237&k=A723A2125F521894C020D42524068B07&l=20143" target="_blank" rel="noopener">Get Started — Check Eligibility</a>
+        <a class="btn btn-secondary" href="#faq">View FAQs</a>
+      </div>
+      <!-- HubSpot form placed right below the main CTA button -->
+      <div class="hubspot-form" style="margin-top:16px;">
+        <script src="https://js-eu1.hsforms.net/forms/embed/147850114.js" defer></script>
+        <div class="hs-form-frame" data-region="eu1" data-form-id="d8c6b9c8-fbd9-4e92-9bf7-bf7459a46296" data-portal-id="147850114"></div>
+      </div>
+      <p class="note">
+        By continuing, you’ll be taken to the official sign‑up page. Participation is subject to eligibility and local rules.
+      </p>
+    </div>
+    <!-- Removed Quick Details section as requested -->
+  </section>
+  <section id="faq" class="card" style="margin-top:20px;">
+    <h2>FAQ</h2>
+    <details>
+      <summary>Who can join?</summary>
+      <p>Typically, this is intended for users in the United States who meet the eligibility requirements shown on the official sign‑up page (including age requirements).</p>
+    </details>
+    <details>
+      <summary>How do I start?</summary>
+      <p>Tap “Get Started — Check Eligibility” and follow the steps on the official page. For the smoothest experience, use an iPhone and Safari.</p>
+    </details>
+    <details>
+      <summary>Is this page the official site?</summary>
+      <p>No. This is a simple informational landing page to help you reach the official sign‑up flow. Always review terms and privacy details on the official page.</p>
+    </details>
+    <details>
+      <summary>What if I have issues signing up?</summary>
+      <p>Try switching to a different browser, ensure you’re on iOS, and double‑check you’re located in the United States. If issues continue, use the help/support options on the official page.</p>
+    </details>
+    <details>
+      <summary>Do you store my personal information?</summary>
+      <p>This landing page does not collect personal data. Clicking the button takes you to the official sign‑up page where their privacy policy applies.</p>
+    </details>
+  </section>
+  <div class="footer">
+    <div><b>Disclaimer:</b> This is an independent promotional landing page. Mobile Expression is a third‑party service. All trademarks belong to their respective owners.</div>
+    <div class="footer-links">
+      <a href="#faq">FAQ</a>
+      <a href="#">Top</a>
+    </div>
+    <div style="margin-top:10px;">© <span id="year"></span> Mobile Expression Landing Page</div>
+  </div>
+</main>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
